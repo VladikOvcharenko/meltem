@@ -29,7 +29,7 @@ inputPhone.addEventListener('input', function () {
 
 function validatePhone() {
   const phone = inputPhone.value
-  if (phone.length < 13) {
+  if (phone.length < 12) {
     inputPhone.classList.add('not-validate')
   } else {
     inputPhone.classList.remove('not-validate')

@@ -24,12 +24,12 @@ formInputs.forEach((input) => {
 })
 
 inputPhone.addEventListener('input', function () {
-  this.value = this.value.replace(/[^\d]/g, '')
+  this.value = this.value.replace(/[^\+?\d]/g, '')
 })
 
 function validatePhone() {
   const phone = inputPhone.value
-  if (phone.length < 12) {
+  if (phone.length < 13) {
     inputPhone.classList.add('not-validate')
   } else {
     inputPhone.classList.remove('not-validate')
